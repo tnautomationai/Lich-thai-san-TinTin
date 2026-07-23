@@ -15,8 +15,6 @@ import random
 TELEGRAM_TOKEN = "7795878053:AAEWji8wNFQxJ08UpAtVuGi13mFBh3nCh1A"
 TELEGRAM_CHAT_ID = "1844804075"
 
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-
 # Khởi tạo Session State
 if "authenticated" not in st.session_state: st.session_state.authenticated = False
 if "voice_cache" not in st.session_state: st.session_state.voice_cache = {}
