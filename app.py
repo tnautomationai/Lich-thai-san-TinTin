@@ -14,7 +14,6 @@ import random
 # --- 1. THÔNG TIN HỆ THỐNG (GIỮ NGUYÊN) ---
 TELEGRAM_TOKEN = "7795878053:AAEWji8wNFQxJ08UpAtVuGi13mFBh3nCh1A"
 TELEGRAM_CHAT_ID = "1844804075"
-GROQ_API_KEY = 
 
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
