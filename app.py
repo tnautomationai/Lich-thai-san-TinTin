@@ -78,15 +78,7 @@ def send_telegram(text):
         return True
     except: return False
 
-# --- 4. BẢO MẬT ---
-if not st.session_state.authenticated:
-    st.markdown("<h1 style='text-align: center; margin-top: 10%;'>⚡ TIN TIN Website</h1>", unsafe_allow_html=True)
-    _, col_login, _ = st.columns([1,1.5,1])
-    with col_login:
-        pwd = st.text_input("Mật khẩu truy cập:", type="password")
-        if st.button("Mở khóa hệ thống"):
-            if pwd == PASSWORD_APP: st.session_state.authenticated = True; st.rerun()
-    st.stop()
+
 
 # --- 5. ĐIỀU HƯỚNG TRANG (NAVIGATION) ---
 with st.sidebar:
